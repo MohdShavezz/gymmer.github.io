@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+        form{background-color: rgb(78, 48, 212);padding: 20px;width: 340px;min-width: 300px;border-radius: 10px;}
+        .gender{display: flex;align-items: center;color: white  ;}
+        .gender label{ font-size: 16px !important;}
+        .gender input[type=radio]{height: 16px;}
+        .inputs div{padding: 6px;}
+        .inputs div label{color: white;font-size: 22px;font-family: monospace;}
+        .inputs input{width: 100%;height: 30px;padding: 0 10px;}
+        .btn{width: 100%;display: flex;justify-content: center;margin: 20px 10px 0;}
+        .btn button{padding: 5px 10px;border: none;transition: all 0.1s ease;}
+        .btn button:hover{background-color: rgb(216, 23, 49);color: white;cursor: pointer;}
+        .terms{width: 100%;display: flex;align-items: baseline;}
+        .terms p{margin-top: 10px;padding: 0 15px;color: white;}
+
+    </style>
+</head>
+
+<body>
+    <div class="scrollupbtn">
+        <a href="#"><i class="fas fa-hand-point-up"></i></a>         
+     </div>
+     <div id="preloader"></div>
+    <header>
+        <div class="headerIn">
+            <div class="logo">
+                <img src="assets/image/372.jpg" alt="logo" ><span>Fitness</span>
+            </div>
+            <ul>
+                <li ><a href="index.html" id="active">HOME</a></li>
+                <li><a href="nutrition.html">NUTRITION</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1 style="padding-top: 10px;"><center>Signup form</center></h1>
+        <div class="container">
+            <form action="#">
+                <div class="inputs">
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username" placeholder="username" required>
+                    </div>
+
+                    <div>
+                        <label for="username">E-mail</label><br>
+                        <input type="email" name="email" placeholder="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" placeholder="password" required>
+                    </div>
+                    
+                    <div>
+                        <label for="gender">Gender</label><br>
+                       <div class="gender" >
+                                <label for="male">Male</label><input type="radio" id="male" name="gender">
+                                <label for="female">Female</label><input type="radio" id="female" name="gender">
+                       </div>
+                    </div>
+                </div>
+                <div class="terms">
+                    <p>I agree to the TOS</p><input type="checkbox">
+                </div>
+                <div class="btn"><button>Signup</button></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+        Created by <a href="https://www.linkedin.com/in/mohd-shavez-2340b0213">Shavez</a>  | <i class="fa fa-copyright"></i> 2022 All rights.          
+     </footer>
+
+
+     <script>
+        var v = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            v.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

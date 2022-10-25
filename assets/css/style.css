@@ -1,0 +1,366 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+header{
+    width: 100%;background: rgb(255, 255, 255);position: fixed;box-shadow: inset 0 0 10px black;
+}
+.headerIn{
+    width: 80%;margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.headerIn .logo{
+    display: flex;align-items: center;
+}
+.headerIn .logo span{
+    font-size: 25px;
+    font-weight: 600;font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.headerIn .logo img{
+    padding-left: 20px;
+    height: 60px;
+}
+.headerIn ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-right: 40px;
+}
+.headerIn ul li{
+    padding-right: 20px;
+}
+.headerIn ul li a{
+    color: rgb(56, 28, 28);
+    text-decoration: none;
+    padding: 5px;
+}
+
+#active,.headerIn ul li a:hover{
+    color: rgb(185, 18, 18);
+    text-decoration: solid;
+    text-decoration: overline;
+}
+.headerIn ul li a:active{
+    color: rgb(185, 18, 18);
+}
+
+
+
+/* main */
+.bg{width: 100%;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/photos/shot-of-a-young-man-working-out-with-battle-ropes-at-the-gym-picture-id1320143958?b=1&k=20&m=1320143958&s=170667a&w=0&h=rpfEmXbwHPGb9l8SpjeLksW91o7jOF5DslRokrF0UQ4=") no-repeat center;
+    background-size: cover;
+}
+.main .content{
+    color: white;
+    width: 80%;
+    padding-top: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .content h1{
+    font-size: 40px;margin: 0;
+}
+.main .content p{
+    text-align: center;width: 80%;
+    padding: 15px 0;
+}
+.main .content .btns a{
+    /* background: red; */
+    text-decoration: none;
+    font-size: 11px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;color: white;
+    transition: all 0.3s ease;
+    font-weight: bolder;
+}
+.main .content .btns a:first-child{
+    background: rgb(224, 15, 15);    
+}
+.main .content .btns a:first-child:hover{
+    background: transparent;    
+    border: 1px solid rgb(224, 15, 15);color: white;
+}
+.main .content .btns a :nth-child(2){
+    background: transparent;
+    border: 1px solid white;
+}
+.main .content .btns a:nth-child(2):hover{
+    background: rgb(224, 15, 15);  border: none;
+}
+
+
+
+/* second */
+.second{
+    width: 80%;margin-top: 40px !important;
+    margin: auto;display: flex;align-items: center;
+}
+.second .left,.second .right{width: 50%;padding: 20px;}
+.second .left{
+    display: flex;
+    justify-content: center;
+}
+.second .left img{
+    height: 340px;
+    width: 283px;
+    object-fit: cover;
+}
+.second .right{
+    font-family: serif;padding-left: 0;
+}
+.second .right button{
+    background-color: rgb(224, 15, 15);color: white;
+    font-size: 11px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    
+}
+.second .right button:hover{
+    background-color: white;
+    border: 1px solid rgb(224,15,15);
+    color: rgb(224, 15, 15);
+    font-weight: bolder;
+}
+.second .right h4{
+    letter-spacing: 3px;
+}
+.second .right h2{
+    font-family: cursive;
+}
+.second .right h2 span{
+    color: red;
+}
+
+
+/* gall */
+.gall{
+    display: flex;width: 100%;margin-top: 20px;padding: 10px 0;flex-wrap: wrap;justify-content: center;
+}
+.gall div{
+    width: 25%;border: 1px solid grey;min-width: 150px;height: 175px;
+}
+.gall div .content{
+    display: flex;flex-direction: column;justify-content: flex-end;padding: 10px;color: white;font-family: serif;
+}
+.gall div .content hr{
+    margin: 2px 0 5px 0;width: 65%;
+}
+.gall div .content h5 span{
+    font-size: 10px;
+}
+.gallimg1{
+    width: 100%;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJmr8d0fTUBfywhax-_JzTNlp-JpdjsSmLnAizivj&s") no-repeat center;
+    background-size: cover;
+}
+.gallimg2{
+    width: 100%;
+    background: url("https://t3.ftcdn.net/jpg/03/20/45/94/360_F_320459487_SAvrvfR4NN4CkFQccj49rBfmiLoYebuw.jpg") no-repeat center;
+    background-size: cover;
+}
+.gallimg3{
+    width: 100%;
+    background: url("https://www.fitnessfirst.co.uk/media/cm2jlwu2/fitnessfirst_interiors-bakerst_147_web.jpg?width=540&height=405&quality=80&rnd=132869859581330000") no-repeat center;
+    background-size: cover;
+}
+.gallimg4{
+    width: 100%;
+    background: url("https://thumbs.dreamstime.com/b/muscular-athletic-bodybuilder-fitness-model-posing-exercis-weights-exercises-gym-64856941.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+/* footer  */
+footer{font-family: monospace;
+    background: black;
+    padding: 20px 0;
+    font-size: 16px;
+    color: white;
+    text-align: center;}
+footer a{color: red;}
+
+
+
+
+
+/* nutrition.html CSS */
+.food{
+    width: 100%;
+}
+.food .content{display: flex;align-items: center;padding: 20px;width: 85%;margin: auto;}
+.food .content .left,.content .right{width: 50%;}
+.food .content .left{display: flex;justify-content: center;align-items: center;}
+.food .content .left img{width: 300px;}
+
+
+
+@media screen and (max-width:768px) {
+
+    .headerIn .logo img {
+        padding-left: 0;
+        height: 40px;
+    }
+    .headerIn ul li a {
+        padding: 5px 8px;
+    }
+    .headerIn .logo span {
+        font-size: 20px;
+    }
+    /* main content */
+    .main .content{
+        padding-top: 260px;
+    }
+    .main .content h1{
+        font-size: 27px;
+    }
+    .main .content p{
+        font-size: 13px;padding: 14px;
+    }
+    .headerIn ul {
+        padding-right: 0px;
+        font-size: 12px;
+    }
+    .headerIn ul li {
+        padding-right: 0px;
+    }
+
+    /* second  */
+    .second .left img {
+        height: 269px;
+    }
+    .second .right{
+        padding: 20px;
+    }
+    .second .right h4 {
+        letter-spacing: 2px;
+    }
+    .second .right h2 {
+        font-size: 18px;
+    }
+    .second .right p {
+        font-size: 12px;
+    }
+    .second .right .four {
+        font-size: 12px;
+    }
+    .second .right button {
+        padding: 6px 10px;
+    }
+
+
+
+
+}
+
+@media (max-width:600px) {
+    
+    .blog .content {
+        width: 100% !important;
+    }
+    .adver{
+        display: none !important;
+    }
+
+}
+
+.menu-btn {
+    display: flex;align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    display: none !important;
+}
+
+
+@media (max-width:480px) {
+
+    /* very important step */
+    .menu-btn i.act:before {
+        content: "\f00d";
+    }
+
+    .headerIn ul {
+        flex-direction: column;
+        position: fixed;
+        background: black;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease !important;
+    }
+
+    .headerIn ul.act {
+        left: 0;
+    }
+
+    .act {
+        left: 0;
+    }
+
+    .headerIn ul li {
+        display: block;
+    }
+
+    .headerIn ul li a {
+        display: inline-block;
+        margin: 16px 0;
+        font-size: 20px;
+        color: grey;
+    }
+
+    .menu-btn {
+        display: block !important;
+        color: red;
+        padding-top: 8px;
+        z-index: 100;
+        margin-left: 200px;
+    }
+
+
+}
+
+/* scroll up btn  */
+.scrollupbtn{
+    position: fixed;
+    bottom: 0;right: 0;
+    margin: 0 18px 18px 0;z-index: 999;
+}
+ .scrollupbtn i{color: red;
+    padding: 4px;
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 50%;}
+ .scrollupbtn i:hover{background: red;color: white ;border: 2px solid white;}
+
+/* preloader  */
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #1B1941 url('../../assets/image/pl.gif') no-repeat center;
+    z-index: 100;
+    position: fixed;
+    background-size: 20%;
+}
